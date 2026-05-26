@@ -38,7 +38,12 @@ dependencies {
 }
 
 test {
-    useJUnitPlatform()
+    useJUnitPlatform {
+        def groups = System.getProperty('groups')
+        if (groups) {
+            includeTags groups
+        }
+    }
     finalizedBy aggregate
 }
 
