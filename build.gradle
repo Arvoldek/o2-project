@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'net.serenity-bdd.serenity-gradle-plugin' version '4.2.34'
+    id 'net.serenity-bdd.serenity-gradle-plugin' version '3.9.8'
 }
 
 group = 'com.o2'
@@ -16,9 +16,9 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'net.serenity-bdd:serenity-core:4.2.34'
-    testImplementation 'net.serenity-bdd:serenity-rest-assured:4.2.34'
-    testImplementation 'net.serenity-bdd:serenity-junit5:4.2.34'
+    testImplementation 'net.serenity-bdd:serenity-core:3.9.8'
+    testImplementation 'net.serenity-bdd:serenity-rest-assured:3.9.8'
+    testImplementation 'net.serenity-bdd:serenity-junit5:3.9.8'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
 
     // Lombok
