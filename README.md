@@ -124,11 +124,11 @@ open target/site/serenity/index.html
 
 A GitHub Actions workflow is configured at `.github/workflows/tests.yml`.
 
-It runs on every push and pull request to `main`, `master`, or `develop`, and:
+It runs on every push and pull request to `main` or when manually dispatched.
 
-1. Sets up Java 11 (Temurin)
+1. Sets up Java 17 (Temurin)
 2. Caches Gradle dependencies
-3. Runs `./gradlew clean test`
+3. Runs `./gradlew clean test` or tagged group of tests
 4. Uploads the Serenity HTML report as a build artifact (retained 30 days)
 5. Uploads JUnit test results as a build artifact (retained 7 days)
 
